@@ -1,0 +1,3 @@
+
+Scaffold-DbContext "Server=192.168.60.12;Database=Currency; User=Integrations; password=@DgcpErp2017;" Microsoft.EntityFrameworkCore.SqlServer -OutputDir Models -DataAnnotations
+

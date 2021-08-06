@@ -1,0 +1,69 @@
+.mainContainer {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  border: 1px solid blue;
+  padding: 40px;
+  background-color: white;
+}
+.mainDashboard {
+  position: absolute;
+  left: 15%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  border: 1px solid blue;
+  padding: 40px;
+  background-color: white;
+}
+#btnlogout {
+  position: relative;
+  left: 100%;
+  border: 3px solid #73ad21;
+}
+.borderRight {
+  border-right-style: solid;
+  border-right-color: black;
+}
+.alig {
+  text-align: center;
+}
+hr.new4 {
+  border-top: 1px dashed red;
+}
+.container {
+  border: 3px solid #73ad21;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  padding: 40px;
+  background-color: white;
+  width: 50% !important;
+  min-width: 500px;
+}
+
+html,
+body {
+  height: 100%;
+}
+.fle {
+  display: flex;
+  /* align-items: center;
+  justify-content: center; */
+  flex-direction: column;
+}
+
+.rowTop {
+  top: 10px;
+  position: relative;
+}
+input,
+optgroup,
+select,
+textarea {
+  height: 2rem;
+}
+.secondaryContainer {
+  text-align: center;
+}

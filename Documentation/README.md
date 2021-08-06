@@ -1,7 +1,4 @@
-﻿# VirtualMind
-Test of VirtualMind
-
-**ESPECIFICACIONES TÉCNICAS PARA EL DESARROLLO**
+﻿**ESPECIFICACIONES TÉCNICAS PARA EL DESARROLLO**
 
 1. Base Datos
    1. Sql Server Management Studio v17.4
