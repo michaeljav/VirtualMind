@@ -1,5 +1,7 @@
-# VirtualMind
-Test of VirtualMind
+# Currency exchange (.Net Core and React)
+
+
+The goal  of this application is to be able to perform the currency exchange by consuming an api that provides the rate of the currency to be exchanged.
 
 **TECHNICAL SPECIFICATIONS FOR DEVELOPMENT**
 
