@@ -1,14 +1,14 @@
-﻿# VirtualMind
+# VirtualMind
 Test of VirtualMind
 
-**ESPECIFICACIONES TÉCNICAS PARA EL DESARROLLO**
+**TECHNICAL SPECIFICATIONS FOR DEVELOPMENT**
 
-1. Base Datos
+1. **Database**
    1. Sql Server Management Studio v17.4
    1. Microsoft SQL Server 2016 (RTM) - 13.0.1601.5 (X64)   Apr 29 2016 23:23:58   Copyright (c) Microsoft Corporation  Enterprise Edition (64-bit) on Windows Server 2016 Standard 6.3 <X64> (Build 14393: ) (Hypervisor) 
 
 
-1. Rest API 
+1. **Rest API Backend** 
    1. Visual Studio Community 2019
    1. Framework: .NET 5.0
    1. EntityFrameworkCore.SqlServer 5.0.8
@@ -21,7 +21,7 @@ Test of VirtualMind
 
 
 
-1. Aplicación de interfaz de usuario (Cliente)
+1. **User interface application (Client)**
    1. axios: ^0.21.1,
    1. bootstrap: ^5.1.0,
    1. md5: ^2.3.0,
@@ -36,20 +36,20 @@ Test of VirtualMind
 
 
 
-**PASOS PARA INICIAR EL PROYECTO**
+**STEPS TO START THE PROJECT**
 
-1. **Base Datos**
-   1. Ejecutar los siguiente Scripts
-      1. Script para crear Base Datos, Tablas, e Insertar Data de Usuario: DataBaseScript\Crear Base Datos\_Tablas\_Data.sql
-      1. **“Usuario”**: mjavier |  “**Password”**: 123456
-      1. **“Nota”**: La password esta encriptada con MD5
+1. **Data base**
+   1. Run the following Scripts
+      1. Script to create Database, Tables, and Insert User Data: DataBaseScript\Create Database\_Tables\_Data.sql
+      1. **“User”**: mjavier |  “**Password”**: 123456
+      1. **“Note”**: The password is encrypted with MD5
 1. **Rest API** 
-   1. Insertar Credenciales de conexión a base de datos (“**Server, User, Password”**) en el API, ubicado en archivo “**appsettings.json”** en el objeto “**ConnectionStrings”** . 
-   1. Ejecutar servicio Rest API ubicado en la carpeta: **…\Currency**
-   1. Lista de EndPoint.-Puede probarse por la aplicación de POSTMAN
-      1. **GET**  tasa del dolar del dia: [**https://localhost:44303/api/Currency/Dolar**](https://localhost:44303/api/Currency/Dolar)
-      1. **GET**  tasa del real del dia: [**https://localhost:44303/api/Currency/real**](https://localhost:44303/api/Currency/real)
-      1. **POST** Realizar atenticacion para obtener el **TOKEN** : <https://localhost:44303/User/authenticate>
+   1. Insert database connection credentials (“**Server, User, Password”**) in the API, located in the “**appsettings.json”** file in the “**ConnectionStrings”** object.
+   1. Run Rest API service located in folder: **…\Currency**
+   1. EndPoint list.-Can be tested by POSTMAN application
+      1. **GET**  dollar rate of the day: [**https://localhost:44303/api/Currency/Dolar**](https://localhost:44303/api/Currency/Dolar)
+      1. **GET**  real rate of the day: [**https://localhost:44303/api/Currency/real**](https://localhost:44303/api/Currency/real)
+      1. **POST** Perform authentication to obtain the **TOKEN**: <https://localhost:44303/User/authenticate>
          1. **Body** à  **raw:** 
 
 {
@@ -60,7 +60,7 @@ Test of VirtualMind
 
 }
 
-1. **POST** Realizar cambio a dolar: [**https://localhost:44303/api/Currency/change**](https://localhost:44303/api/Currency/change)
+1. **POST** Make change to dollar: [**https://localhost:44303/api/Currency/change**](https://localhost:44303/api/Currency/change)
    1. **Body** à  **raw:** 
 
 {
@@ -92,11 +92,33 @@ Test of VirtualMind
 1. Headers
    1. “**KEY**”: Authorization     “**VALUE**”:<TOKEN GENERADO EJ: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VJZCI6IjMiLCJuYmYiOjE2MjgyNjA4NTIsImV4cCI6MTYyOTk4ODg1MiwiaWF0IjoxNjI4MjYwODUyfQ.NYwVx56O9fcOb159pYHN6\_h5Xr6OrE183H4CyJ1vtIQ>
 
-1. **Subir Interfaz de Usuario React (Cliente)**
-   1. **Instalar:** Node.js si no lo tiene instalado**.**
-   1. **Abrir la siguiente carpeta en Visual Code :** Client\currencyclient
-   1. **Abrir la línea de comando in Visual Code: window (Ctrl + `) o Mac shortcut (Command + Shift + P)**
-   1. **Ejcutar el siguiente código para descargar paquetes de node\_modules :** npm install
-   1. **Una vez descargardos, ejecutar el siguiente código para Ejecutar Cliente Reat.js:** npm start
+1. **Launch React UI (Client)**
+   1. **Install:** Node.js if you don't have it installed**.**
+   1. **Open the following folder in Visual Code :** Client\currentcyclient
+   1. **Open command line in Visual Code: window (Ctrl + `) or Mac shortcut (Command + Shift + P)**
+   1. **Run the following code to download packages from node\_modules :** npm install
+   1. **Once downloaded, run the following code to Run Reat.js Client:** npm start
+   
+   
+##### Images Backend API
 
+
+![](Swager.png)
+
+##### Images Client
+
+**Login**
+
+![](Login.png)
+
+**currency exchange**
+
+![](CurrencyExchange.png)
+
+**Successful currency exchange**
+![](Successful.png)
+
+**Records saved successfully**
+
+![](Records%20Saved.png)
 
